@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply text-white font-bold uppercase text-xs px-4 py-2 rounded mr-1 mb-1 ease-linear transition-all duration-150;
+}
+
+.btn:hover {
+    @apply shadow-xl;
+}
+
+.purple-btn {
+    @apply btn bg-purple-500;
+}
+
+.purple-btn:active {
+    @apply bg-purple-600;
+}
