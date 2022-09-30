@@ -61,7 +61,7 @@ const resetTimer = (pausesAudio: boolean = false): void => {
   audio.currentTime = 0;
 };
 
-const audio = new Audio("/src/assets/alarm.mp3");
+const audio = new Audio("./src/assets/alarm.mp3");
 watch(sec, (): void => {
   if (!isTimerStopped.value && sec.value > 0) return;
   audio.play();
